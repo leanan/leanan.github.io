@@ -21,6 +21,28 @@
             </p>
 
             <p>
+              In this circuit, a Light Dependent Resistor (LDR) is being used
+              to alter the brightness of an LED.
+
+              <h4>
+                The LDR and LED
+              </h4>
+              The LED is connected to power through Pin 11 and is set as an OUTPUT,
+              with the other leg connecting to a 1k Ohm resistor and to GND.
+              The Blue LED has a voltage drop of 3.3V.
+              By calculating the resistance required, I found that R = (5V-3.3V)/ 0.02 = 85 Ohms
+              It is because the required amount of resistance for this LED is satisfied by the
+              1k resistor, that I used it in this circuit.
+
+              The LDR is connected by one leg to 5V of power, and the other legal
+              to an analog INPUT pin, A0, as well as a 10k Ohm resistor and back to GND.
+
+              By using the code provided below, the sensor can turn the LED off
+              in the presence of bright light (a certain value in the code) or turn the
+              LED on and vary the amount of brightness.
+            </p>
+
+            <p>
             <h3> Calculations and Schematics </h3>
             <img src="LDR-LED_schem.png" width=400></a>
             </p>
