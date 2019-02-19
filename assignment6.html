@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Leana Nakkour's HCDE 439 Physical Computing Page!</title>
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Assignment 6: Datalogging</h1>
+            <h2>
+              Datalogging!
+            </h2>
+            <h3>
+              The assignment: Create a webpage that interacts with data from arduino over serial.
+            </h3>
+            <p>
+            <img src="datalogging-graph.gif" width=400></a>
+            <br>
+            <img src="a6-potentiometer.gif" width=400></a>
+            </p>
+
+            <p>
+
+            For this assignment, I used a potentiometer to communicate its data values to a webpage over serial.
+            The potentiometer provided by arduino is a variable resistor which reaches as high as 10k Ohms.
+            To do this, I set up my potentiometer to be connected to GND, 5V of power, and
+            to the analog pin A0. The schematic and set-up are shown below.
+
+            As the dial of the potentiometer is turned from low (lowest is 0) to high (up to 1023),
+            the serial communicates to the webpage its data value. Using Javascript, I was
+            able to coordinate this line with the values read from serial to spike when values were high
+            and drop when they were low.
+
+            </p>
+            <h3>
+              Schematic
+            </h3>
+            <p>
+              <img src="A6_schem.jpg" width=400></a>
+            </p>
+
+            <h3>
+              The Setup
+            </h3>
+          <p>
+            <img src="a6-setup.jpg" width=400></a>
+            <img src="A6_setup.jpg" width=400></a>
+          </p>
+
+          <h3>
+            The Code
+          </h3>
+            <h4> Arduino Sketch </h4>
+            <p>
+              <img src="a6-arduino-code.png" width=400></a>
+            </p>
+
+            <h4> Sketch.js Code </h4>
+            <p>
+              <img src="sketch.js-1.png" width=300></a>
+            </p>
+            <p>
+              <img src="sketch.js-2.png" width=300></a>
+            </p>
+            <p>
+              <img src="sketch.js-3.png" width=300></a>
+            </p>
+        </div>
+
+    </body>
+</html>

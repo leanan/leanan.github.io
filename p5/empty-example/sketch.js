@@ -70,8 +70,10 @@ function graphData(newData) {
 
 function draw() {
 	graphData(datain);
-  // background(0);
-  // fill(255);
+
+   // background(0);
+   // fill(255);
+   // text("sensor value: " + datain, 30, 30);
 
   // if (datain == 0) {
   //     text("button pressed: YES", 30,30);
@@ -79,3 +81,5 @@ function draw() {
   //     text("button pressed: NO", 30,30);
   // }
 }
+
+draw();
