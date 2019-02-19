@@ -69,12 +69,13 @@ function graphData(newData) {
 }
 
 function draw() {
-  background(0);
-  fill(255);
+	graphData(datain);
+  // background(0);
+  // fill(255);
 
-  if (datain == 0) {
-      text("button pressed: YES", 30,30);
-  } else {
-      text("button pressed: NO", 30,30);
-  }
+  // if (datain == 0) {
+  //     text("button pressed: YES", 30,30);
+  // } else {
+  //     text("button pressed: NO", 30,30);
+  // }
 }
