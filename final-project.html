@@ -25,21 +25,57 @@
               What immediately comes to mind is using Arduino's Thermistor and possibly
               LEDs to generate some type of feedback as to whether the enclosed space
               is too hot to keep an animal or small child in.
+              <br>
 
               <br>
-              <br>
-              <b>Update 2/11:</b> Based off the past few assignments, I could possibly use
+              <h3><b>Update 2/11/19:</b><h3>
+              <p> Based off the past few assignments, I could possibly use
               an LED to serve as a form of feedback to a certain temperature threshold being met
               or some sort of speaker to allow for audio feedback.
+              </p>
               <br>
+
               <br>
-              <b>Update 2/15:</b> In addition to the LED or audio feedback, this product
+              <h3><b>Update 2/15/19:</b> </h3>
+              <p> In addition to the LED or audio feedback, this product
               could also serve the purpose of being left in a room/area to be able to detect temperature levels that
               border on too hot or too cold. It could send an alert or message to notify the owner
               that a certain temperature threshold has been met and to return immediately.
               (ex: "It's too hot in here!" or "It's too cold in here!")
+              </p>
               <br>
+
               <br>
+              <h3><b>Update 2/28/19:</b> </h3>
+              <p> Knowing that I will need to use a Thermistor for this project,
+              today I spent some time learning how to set up the circuit and write code in the Arduino
+              sketch. Below I have images of the circuit where the 10k Thermistor (provided by my Arduino kit)
+              is connected to a 100k Ohm resistor. One leg of the resistor is connected to GND, the other
+              to a leg of the Thermistor. A wire is then connected to the analog pin A0 to the same
+              row where the legs of the thermistor and resistor are connected. The other leg of the Thermistor
+              is connected to 5V of power.
+              <br>
+              So far, this code and set up works, but the code only reports the resistance value of <thead>
+              Thermistor. I will need to figure out a conversion from resistance value and its associated
+              temperature, preferrably in Fahrenheit. Additionally, I'll need to figure out how
+              I will display feedback once a certain temperature threshold is met. This could be as simple as
+              as a Red LED lighting up when the temperature is too high and a Green LED when it is "Ok". A
+              more ambitious approach could be using the LCD screen to display a message containing the reported
+              temperature read by the Thermistor and whether or not the encclosed area is safe.
+              </p>
+              <br>
+
+              <h4>The Setup</h4>
+            <p>
+              <img src="thermistor-testing-setup.jpg" width=400></a>
+            </p>
+
+              <h4>The Code</h4>
+            <p>
+              <img src="thermistor-testing-code.png" width=400></a>
+            </p>
+
+
             </p>
 
 
