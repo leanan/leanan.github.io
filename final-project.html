@@ -74,10 +74,60 @@
             <p>
               <img src="thermistor-testing-code.png" width=400></a>
             </p>
-
-
             </p>
 
+            <br>
+            <h3><b>Update 3/5/19:</b></h3>
+            <p>
+            Since the last update, I managed to find code that can convert the resistance
+            measured by the Thermistor to degrees Fahrenheit (F). With that key aspect figured out,
+            I started working on the feedback system I am trying to incorporate with this project.
+            I referred to my first assignment where I made LEDs blink and recreated the set up
+            alongside the Thermistor on my breadboard.
+            </p>
+            <p>
+            A red LED is connected to Pin 2 using a 1k Ohm resistor - more than enough to accommodate for
+            the voltage drop - and a second 1k Ohm resistor is used for a green LED connected
+            to Pin 4. In the code, I defined both pins as OUTPUTs and created a conditional statement
+            that if the temperature measured by the Thermistor is between 50 and 80 degrees F, the green LED
+            would turn on (and the red LED is made sure to be turned off). If the temperature
+            measured is greater than or equal to 84 degrees F, the red LED turns on (and the green
+            LED is made sure to be turned off).
+            </p>
+            <p>
+            Rationale for Temperature thresholds described in the conditional statement:
+            "When the outside temperature is 70 degrees, a car can heat up to 89 degrees
+            in just 10 minutes, and to 104 in 30 minutes. At 80 degrees outside, you’re
+            looking at 99 degrees inside a vehicle in 10 minutes and 114 in 30 minutes.
+            At 95 degrees, it only takes 10 minutes to reach 114 degrees and the temperature
+            soars to 129 degrees in 30 minutes."
+            <a href="https://www.canidae.com/blog/2016/08/is-there-a-safe-temperature-to-leave-a-dog-in-a-car/">[SOURCE]</a>
+            </p>
+            <p>
+            That being said, if the temperature reaches 89 degrees or higher, it
+            is dangerous to whomever is in the vehicle or enclosed space. So I
+            set the conditional statement to turn on the red light as a way
+            to provide feedback that the temperature being read is too hot to leave
+            a pet or child in that space.
+            </p>
+
+            <h4>The Setup</h4>
+          <p>
+            <img src="thermistor+leds_3.5.19.png" width=400></a>
+          </p>
+
+          <h4>Schematic</h4>
+          <p>
+            <img src="thermistor+leds_schem3.5.19.png" width=400></a>
+          </p>
+
+            <h4>The Code</h4>
+          <p>
+            <img src="therm+led-CODE_3.5.19.png" width=400></a>
+          </p>
+          </p>
+
+          <br>
 
         </div>
 
