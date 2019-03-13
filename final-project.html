@@ -184,12 +184,26 @@
 
           <br>
           <h3><b>Implementation</b></h3>
+
+          <br>
+          <h4><b> Encasement</b></h4>
           <p>
             <img src="encasing-final-project.jpg" width=400></a>
           </p>
 
           <p>
             <img src="box-fold-layout.JPG" width=400></a>
+          </p>
+
+          <br>
+          <h4><b> Setup</b></h4>
+          <p>
+            Below I have images of the circuit where the 10k Thermistor (provided by my Arduino kit) is connected to a 10k Ohm resistor.
+            One leg of the resistor is connected to GND, the other to a leg of the Thermistor. A wire is then connected to the analog pin A0
+            to the same row where the legs of the thermistor and resistor are connected. The other leg of the Thermistor is connected to 9V of power.
+            A red LED is connected to Pin 2 using a 1k Ohm resistor - more than enough to accommodate for the voltage drop - and a second 1k Ohm resistor
+            is used for a green LED connected to Pin 4. In the code, I defined both pins as OUTPUTs and created a conditional statement that if the
+            temperature measured by the Thermistor is between 50 and 80 degrees F, the green LED would turn on (and the red LED is made sure to be turned off). If the temperature measured is greater than or equal to 84 degrees F, the red LED turns on (and the green LED is made sure to be turned off).
           </p>
 
           <p>
